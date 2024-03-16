@@ -13,24 +13,24 @@ include 'navbar.php';
     <link rel="stylesheet" href="https://cdn.datatables.net/2.0.2/css/dataTables.bootstrap5.css
     ">
     <style>
-        /* Add padding around the DataTable */
+        /*padding voor  DataTable */
         #example_wrapper {
             padding: 20px;
         }
 
-        /* Adjust position of search input */
+        /* Pas de positie van de search input */
         #example_filter {
             margin-bottom: 10px;
         }
 
-        /* Adjust position of pagination and "entries per page" dropdown */
+        /* Pas de positie van de paginering aan en "entries per page" dropdown */
         #example_paginate {
             margin-top: 10px;
         }
 
-        /* Add border to the DataTable */
+        /*  border voor DataTable */
         #example {
-            border: 1px solid #ddd; /* Adjust border color and thickness as needed */
+            border: 1px solid #ddd; /* = border kleuren */
             border-radius: 5px; /* Rounded corners */
         }
     </style>

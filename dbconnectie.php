@@ -5,7 +5,7 @@ class Controller{
     private $host ='localhost';
     private $user ='root';
     private $password = '';
-    private $database = 'biebliotheek';
+    private $database = 'bibliotheek';
 
     public $con = null;
 
@@ -17,8 +17,22 @@ class Controller{
         }
         echo "Connection Successful...!";
         }
-    }
 
+        //Fetch alle boeken
+
+    public function getAllBooks(){
+        $books = array();
+        $query = "SELECT * FROM boeken";
+        $result = $this->con->query($query);
+        if ($result->num_rows >0) {
+            while($row = $result->fetch_assoc()){
+                $books[] = $row;
+                
+            }
+        }
+        return $books;
+    }
+}
 //     <?php
 
 

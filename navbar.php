@@ -19,7 +19,7 @@
         <a class="nav-link" href="Homepage.php">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Boekenlijst<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="show-book.php">Boekenlijst<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="Studentinfo-overzicht.php">Studenten Overzicht<span class="sr-only">(current)</span></a>

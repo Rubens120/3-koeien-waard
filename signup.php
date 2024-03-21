@@ -22,22 +22,22 @@
             </div>
             <button name="submit" type="submit" class="btn btn-primary">Submit</button>
         </form>
-        <?php
-        include('dbconnectie.php');
-        if(isset($_POST['submit'])) {
-            $email = $_POST['email'];
-            $password = $_POST['password'];
-            $hashedPassword = password_hash($password, PASSWORD_DEFAULT); // Hash the password using bcrypt
+          <?php
+    //    include('dbconnectie.php');
+    //    if(isset($_POST['submit'])) {
+    //        $email = $_POST['email'];
+    //        $password = $_POST['password'];
+    //        $hashedPassword = password_hash($password, PASSWORD_DEFAULT); // Hash the password using bcrypt
 
-            $query = "INSERT INTO registertb (email, password) VALUES ('$email', '$hashedPassword')";
-            $result = mysqli_query($con, $query);
+    //        $query = "INSERT INTO registertb (email, password) VALUES ('$email', '$hashedPassword')";
+    //        $result = mysqli_query($con, $query);
 
-            if($result) {
-                echo "Je hebt een account aangemaakt";
-            } else {
-                echo "Er is een fout opgetreden bij het aanmaken van uw account";
-            }
-        }
+    //        if($result) {
+    //            echo "Je hebt een account aangemaakt";
+    //        } else {
+    //            echo "Er is een fout opgetreden bij het aanmaken van uw account";
+    //        }
+    //    }
         ?>
 
     </section>
